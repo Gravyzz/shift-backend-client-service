@@ -46,3 +46,12 @@ docker compose up -d
 ```
 
 Приложение поднимется на `http://localhost:8080`, PostgreSQL — на `5432`.
+
+## Документация
+
+- [OpenAPI спецификация](docs/openapi.yaml)
+- Диаграммы: [загрузка файла](docs/images/save_file.png), [обработка файла](docs/images/process_file.png)
+
+### Схема базы данных
+
+![Схема БД](docs/images/database_schema.png)
