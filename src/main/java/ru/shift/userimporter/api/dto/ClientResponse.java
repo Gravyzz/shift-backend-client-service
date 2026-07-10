@@ -1,16 +1,16 @@
 package ru.shift.userimporter.api.dto;
 
+import java.time.Instant;
 import java.time.LocalDate;
-import java.time.OffsetDateTime;
 
 public record ClientResponse(
-        Long phone,
+        long phone,
         String name,
         String lastName,
         String middleName,
         String email,
         LocalDate birthdate,
-        OffsetDateTime creationTime,
-        OffsetDateTime updateTime
+        Instant creationTime,
+        Instant updateTime
 ) {
 }

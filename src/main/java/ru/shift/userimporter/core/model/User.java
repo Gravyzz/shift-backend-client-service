@@ -14,8 +14,8 @@ import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
+import java.time.Instant;
 import java.time.LocalDate;
-import java.time.OffsetDateTime;
 
 @Entity
 @Table(name = "users")
@@ -50,9 +50,9 @@ public class User {
 
     @CreationTimestamp
     @Column(name = "created_at", updatable = false)
-    private OffsetDateTime createdAt;
+    private Instant createdAt;
 
     @UpdateTimestamp
     @Column(name = "updated_at")
-    private OffsetDateTime updatedAt;
+    private Instant updatedAt;
 }
